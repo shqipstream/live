@@ -1,12 +1,15 @@
 html, body{
 	background: url("img/bg.jpg") top no-repeat;
 	background-size: 100% auto;
-	background-color: #141414;
+	background-color: #000;
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	text-decoration:  none;
 }
 
+.embed-responsive-16by9::before{
+    padding-top:60%
+}
 
 header{
 	height: 80px;
@@ -77,7 +80,7 @@ content{
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -127,10 +130,24 @@ content{
 }
 
 .player{
-	background-image: url("img/cover.png");
-	background-size: 100% auto;
+	background-image: url("img/logo-red.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25% auto;
+	background-color: rgba(0, 0, 0, 0.6);
 	padding-top: 56.25%;
-	border: solid red 0px;
+}
+
+@media only screen and (max-width: 575px) {
+	.player{
+		background-image: url("img/logo-red.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 25% auto;
+		background-color: rgba(255, 255, 255, 0.2);
+		padding-top: 56.25%;
+		border: solid red 0px;
+	}
 }
 
 .tvl{
